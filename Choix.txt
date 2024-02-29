@@ -1,0 +1,30 @@
+Choix de la classe Difficulté:
+    avantages de la classe :
+        on a tout au meme endroits
+        final
+
+    inconvenient de la classe:
+        implementation chiante 
+
+    On a choisis de de faire une classe pour la difficulté car elle contient beaucoup d'informations.
+
+
+    ruche : le joueur peut prendre du miel quand il le souhaite on ne lui impose RIEN
+
+    update qui est vivant : on parcourt tout le terrain on stock les entites vivantes
+
+Terrain/entitesVivantes:
+    Pour optimiser notre code, on avait decider de faire une PriorityQueue pour les entitesVivantes
+        pour eviter de parcourir tout le terrain(qui est un tableau de tableau) a chaque fois qu'on veut faire une action
+        sur une entiteVivante.
+        Mais par manque de temps pour bien comprendre le fonctionnement de la PriorityQueue, on a decider de faire une approche plus simple
+        avec un simple tableau de tableau qui vas contenir toute les entites vivantes.
+
+Classe menu:
+    c'est une classe interne de Partie et static car on l'utilse que dans cette classe
+
+Classe Case:
+    meme si l'utilsisation d'une classe est indispensable dans beaucoup de cas, ici dans la partie logique on a trouvé
+    que c'etait plus simple de faire une classe Map pour controler le terrain entier.
+    Mais pour l'interface graphique la classe Case est necessaire pour pouvoir afficher les cases et avoir un controle
+    sur chaqu'une d'entre elles.
